@@ -31,9 +31,9 @@ const userSchema=mongoose.Schema({
     },
     type:{
         type:String,
-        default:'user'
+        default:'admin'
     }
 
 })
-const UserSchema=mongoose.model('employee details',userSchema);
-module.exports=UserSchema 
+const User=mongoose.model('employee details',userSchema);
+module.exports=User
